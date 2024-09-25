@@ -1,0 +1,13 @@
+
+// Request body
+{
+    "username": "",
+    "code": ""
+}
+
+// Stored in database
+{
+    "username": "",
+    "code": "",
+    "status": "PENDING"
+}

@@ -1,0 +1,93 @@
+.share-wrapper {
+    display: grid;
+    grid-template-rows: 35px 1fr;
+    height: calc(100% - 65px);
+}
+
+.share-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    border-bottom: 1px solid #dedde9;
+}
+
+.share-tabs button {
+    background-color: transparent;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: #e1e1eb;
+    font-size: 20px;
+}
+
+.share-tabs .active-tab {
+    color: #7bb9ff;
+}
+
+.file-upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 600px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.file-upload-wrapper h2 {
+    color: #7bb9ff;
+    font-size: 56px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.file-upload-wrapper form {
+    border: 2px dashed #7bb9ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    height: 300px;
+    width: 100%;
+}
+
+.file-upload-wrapper form i {
+    color: #7bb9ff;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.file-upload-wrapper form p {
+    font-weight: 600;
+    color: #3f3b55;
+}
+
+.share-wrapper section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.share-wrapper section .row {
+    background-color: #dff0ff;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-upload-wrapper section .row i {
+    font-size: 30px;
+    color: #7bb9ff;
+}
+
+.file-upload-wrapper section .upload-details span {
+    font-size: 14px;
+    
+}

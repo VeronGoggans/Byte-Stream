@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/frontend/css/shareView.css">
+    <link rel="stylesheet" href="src/frontend/css/loginView.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>ByteStream</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h2>Byte<span style="color: #6C63FF;">Stream</span></h2>
+            <div class="tabs">
+                <a href="#" data-view="home">Home</a>
+                <a href="#" data-view="share">Share</a>
+                <a href="#" data-view="friends">Friends</a>
+                <a href="#" data-view="login">Login</a>
+                <a href="#" data-view="signup">Sign up</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="sign-up-wrapper">
+                <div class="form">
+                    <div class="user-info">
+                        <h1>Sign up</h1>
+                        <p>Already have an account? <span>Login</span></p>
+                        <input type="text" placeholder="Your Email">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Repeat Password">
+                        <button>Sign up</button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="src/assets/login-image.png" alt="Login Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="router.js"></script>
+</body>
+</html>

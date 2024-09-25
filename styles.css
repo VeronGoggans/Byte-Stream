@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    transition: 150ms;
+}
+
+input {
+    font-size: 16px;
+    outline: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+nav {
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    color: #3f3b55;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 32px;
+}
+
+nav .tabs {
+    display: flex;
+    column-gap: 25px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #3f3b55;
+    font-weight: 600;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #6C63FF;
+    border-radius: 5px;
+    transition: 150ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.content {
+    height: 100dvh;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    color: rgb(209, 220, 230);
+}
