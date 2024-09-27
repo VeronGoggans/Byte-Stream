@@ -1,4 +1,3 @@
-import { BadRequest_400, NotFound_404, InternalServerError_500 } from "./exceptions.js";
 
 export async function fetchData(endpoint, options) {
     try {

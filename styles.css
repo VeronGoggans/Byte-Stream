@@ -22,45 +22,7 @@ input {
     grid-template-rows: 60px 1fr;
 }
 
-nav {
-    padding: 15px 50px;
-    display: flex;
-    align-items: center;
-    color: #3f3b55;
-    justify-content: space-between;
-}
 
-nav h2 {
-    font-size: 32px;
-}
-
-nav .tabs {
-    display: flex;
-    column-gap: 25px;
-}
-
-nav a {
-    position: relative;
-    text-decoration: none;
-    color: #3f3b55;
-    font-weight: 600;
-}
-
-nav a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #6C63FF;
-    border-radius: 5px;
-    transition: 150ms;
-}
-
-nav a:hover::before {
-    width: 100%;
-}
 
 .content {
     height: 100dvh;
@@ -75,4 +37,20 @@ nav a:hover::before {
 .content::-webkit-scrollbar-thumb {
     border-radius: 5px;
     color: rgb(209, 220, 230);
+}
+
+.active-tab {
+    background-color: #3f3b55;
+    color: #fff;
+}
+
+.unloaded-view {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity .7s ease, transform .2s ease;
+}
+
+.fadeInFromBottom {
+    opacity: 1 !important;
+    transform:  translateY(0%) !important;
 }

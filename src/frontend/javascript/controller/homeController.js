@@ -1,13 +1,12 @@
-import { AuthView } from "../view/authView.js"
+import { HomeView } from "../view/homeView.js"
 
-
-export class AuthController {
+export class HomeController {
     constructor(httpModel) {
         this.httpModel = httpModel;
     }
 
     init() {
-        this.view = new AuthView();
+        this.view = new HomeView();
     }
 
 

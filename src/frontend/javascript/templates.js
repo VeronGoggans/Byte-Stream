@@ -1,5 +1,5 @@
 const LOGIN_TEMPLATE = `
-    <div class="login-wrapper">
+    <div class="login-view">
         <div class="form">
             <div class="user-info">
                 <h1>Login</h1>
@@ -16,7 +16,7 @@ const LOGIN_TEMPLATE = `
 `
 
 const SIGNUP_TEMPLATE = `
-    <div class="sign-up-wrapper">
+    <div class="signup-view">
         <div class="form">
             <div class="user-info">
                 <h1>Sign up</h1>
@@ -34,11 +34,7 @@ const SIGNUP_TEMPLATE = `
 `
 
 const SHARE_TEMPLATE = `
-    <div class="share-wrapper">
-        <div class="share-tabs">
-            <button class="active-tab"><i class="fa-solid fa-cloud-arrow-up"></i></button>
-            <button><i class="fa-solid fa-file"></i></button>
-        </div>
+    <div class="share-view">
         <div class="file-upload-wrapper">
             <h2>File Uploader</h2>
             <form action="#">
@@ -80,13 +76,34 @@ const HOME_TEMPLATE = `
 
 `
 
-const FRIENDS_TEMPLATE = `
+const INBOX_TEMPLATE = `
+    <div class="inbox-view">
+        <section class="inbox-section">
+            <h2 class="inbox-title">My Inbox</h2>
+            <div class="files-list"></div>
+        </section>
+    </div>
+`
 
+const FRIENDS_TEMPLATE = `
+    <div class="friends-view">
+        <section class="friends-section">
+            <h2 class="friends-list-title">Friends</h2>
+            <div class="friend-input-container">
+                <input type="text" class="invite-input" placeholder="Invite a friend">    
+            </div>
+            <div class="friends-list">
+                <h2 class="no-friends-message">Nothing here </h2>
+            </div>
+        </section>
+    </div>
 `
  
-export const TEMPLATES = [
-    LOGIN_TEMPLATE,
-    SIGNUP_TEMPLATE,
-    SHARE_TEMPLATE,
-    HOME_TEMPLATE
-]
+export const TEMPLATES = {
+    login: LOGIN_TEMPLATE,
+    signup: SIGNUP_TEMPLATE,
+    inbox: INBOX_TEMPLATE,
+    friends: FRIENDS_TEMPLATE,
+    share: SHARE_TEMPLATE,
+    home: HOME_TEMPLATE
+}

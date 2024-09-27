@@ -1,7 +1,8 @@
-.share-wrapper {
-    display: grid;
-    grid-template-rows: 35px 1fr;
+.share-view {
     height: calc(100% - 65px);
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity .7s ease, transform .2s ease;
 }
 
 .share-tabs {
@@ -66,12 +67,12 @@
     color: #3f3b55;
 }
 
-.share-wrapper section {
+.share-view section {
     width: 100%;
     margin: 20px 0;
 }
 
-.share-wrapper section .row {
+.share-view section .row {
     background-color: #dfe2ffc2;
     margin-bottom: 10px;
     list-style: none;

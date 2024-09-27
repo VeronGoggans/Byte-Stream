@@ -1,10 +1,13 @@
-.login-wrapper,
-.sign-up-wrapper {
+.login-view,
+.signup-view {
     height: calc(100dvh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity .7s ease, transform .2s ease;
 }
 
 
@@ -13,8 +16,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    width: 800px;
-    height: 500px;
+    width: 80%;
+    max-width: 800px;
+    height: 70%;
     border-radius: 40px;
     box-shadow: 0 10px 20px #e5e6eb;
     transition: 500ms;
@@ -26,7 +30,7 @@
 
 .user-info {
     padding: 10px;
-    margin: 50px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     row-gap: 20px;
@@ -41,9 +45,7 @@
 }
 
 .user-info h1 {
-    font-size: 52px;
-    position: absolute;
-    top: 20px;
+    font-size: 40px;
     color: #3f3b55;
 }
 
@@ -80,4 +82,34 @@
 
 .form .image-wrapper img {
     width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .form {
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .user-info {
+        width: 90%;
+    }
+
+    .form img {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .form {
+        height: 100%;
+    }
+    .user-info {
+        padding: 0;
+    }
+
+    .user-info input {
+        padding: 6px;
+    }
+    
 }

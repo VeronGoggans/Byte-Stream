@@ -3,13 +3,11 @@ import uuid
 from sqlalchemy.orm import Session
 from src.backend.data.models import User
 from src.backend.data.managers.user_manager import UserManager
-from src.backend.data.database import Database
 from src.backend.data.exceptions.exceptions import * 
 from src.backend.application.exceptions.exceptions import InvalidCredentialsException
 
 class UserSevice:
-    def __init__(self, db: Database):
-        self.db = db
+    def __init__(self):
         self.manager = UserManager()
 
 

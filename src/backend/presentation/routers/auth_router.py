@@ -1,13 +1,14 @@
 from fastapi import APIRouter
-from src.backend.presentation.dtos.register_dto import RegisterRequestDTO, RegisterResponseDTO
-from src.backend.application.auth_service import AuthService
+from src.backend.presentation.dtos.register_dto import *
+from src.backend.presentation.dtos.login_dto import *
+from src.backend.application.services.user_sercive import UserSevice
 from src.backend.data.database import Database
 
 
 class AuthRouter: 
-    def __init__(self, db: Database):
+    def __init__(self):
         self.route = APIRouter()
-        self.service = AuthService(db)
+        self.service = UserSevice()
 
         # Available routes
         self.route.add_api_route('/register', self.user_registration, methods=['POST'])
@@ -21,6 +22,8 @@ class AuthRouter:
         }
 
 
-
-    def user_login(self): 
-        pass
+    def user_login(self, request: LoginRequestDTO): 
+        return {
+            'User': self.service.login_user(request),
+            'status': 200
+        }

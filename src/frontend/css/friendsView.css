@@ -1,0 +1,113 @@
+.friends-view {
+    height: calc(100dvh - 60px);
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity .7s ease, transform .2s ease;
+}
+
+.friend-input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.friends-section input {
+    border: none;
+    width: 50%;
+    background-color: #f7f7fb;
+    max-width: 400px;
+    min-width: 250px;
+    padding: 15px 20px;
+    border-radius: 30px ;
+}
+
+
+.friends-section {
+    overflow-y: scroll;
+    height: calc(100dvh - 60px);
+    max-height: calc(100dvh - 60px);
+}
+
+
+.friends-section .friends-list-title {
+    margin: 5% auto;
+    width: fit-content;
+    font-size: 56px;
+    color: #6C63FF;
+}
+
+.friends-list {
+    position: relative;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, 210px);
+    margin: 5% auto;
+    width: 80%;
+    padding: 20px;
+}
+
+.friends-list .no-friends-message {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #ebecf9;
+}
+
+.friend-card {
+    background-color: rgb(247, 250, 255);
+    box-shadow: 10px 10px 15px rgb(230, 242, 253);
+    border-radius: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 120px 30px 1fr;
+    transition: 200ms;
+}
+
+.friend-card:hover {
+    scale: 1.05;
+}
+
+#user-icon {
+    background-color: #dbe2ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 32px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C63FF;
+}
+
+.friend-card p {
+    color: #3c3d4c;
+    margin: 5px auto;
+}
+
+.friend-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    transition: 150ms;
+}
+
+.friend-options i {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3c3d4c;
+    border-radius: 5px;
+    transition: 150ms;
+}
+
+.friend-options i:hover {
+    background-color: #eaeeff;
+}
