@@ -32,7 +32,9 @@
     margin: 5% auto;
     width: fit-content;
     font-size: 56px;
-    color: #6C63FF;
+    background: linear-gradient(90deg, rgb(141, 173, 255) 0%, rgb(84, 96, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .friends-list {

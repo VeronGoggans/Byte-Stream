@@ -7,6 +7,7 @@ nav {
 }
 
 nav h2 {
+    color: #c2c9e7;
     font-size: 32px;
 }
 
@@ -17,10 +18,10 @@ nav .tabs {
 
 nav a {
     cursor: pointer;
-    padding: 10px;
-    color: #3f3b55;
+    padding: 10px 20px;
+    color: #c2c9e7;
     position: relative;
-    border-radius: 10px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
 }
@@ -37,7 +38,8 @@ nav a::before {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #3f3b55;
+    background: rgb(255,136,174);
+    background: linear-gradient(90deg, rgb(141, 173, 255) 0%, rgb(84, 96, 255) 100%);
     border-radius: 5px;
     transition: 250ms;
 }

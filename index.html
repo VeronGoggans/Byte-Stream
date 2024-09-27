@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/frontend/css/homeView.css">
     <link rel="stylesheet" href="src/frontend/css/navigation.css">
     <link rel="stylesheet" href="src/frontend/css/shareView.css">
     <link rel="stylesheet" href="src/frontend/css/loginView.css">
@@ -16,17 +17,26 @@
 <body>
     <div class="wrapper">
         <nav>
-            <h2>Byte<span style="color: #6C63FF;">Stream</span></h2>
+            <h2>Byte<span class="webapp-title-color-part">Stream</span></h2>
             <div class="tabs">
                 <a href="#" id="home" data-view="home">Home</a>
                 <a href="#" id="share" data-view="share">Share</a>
                 <a href="#" id="inbox" data-view="inbox">Inbox</a>
                 <a href="#" id="friends" data-view="friends">Friends</a>
                 <a href="#" id="login" data-view="login">Login</a>
-                <a href="#" id="signup" data-view="signup">Sign up</a>
             </div>
         </nav>
-        <div class="content"></div>
+        <div class="content">
+            <div class="home-view">
+                <div class="left">
+                    <article class="text-wrapper">
+                        <h2>Share files with friends</h2>
+                        <p>Introducing <b>ByteStream</b>, a cutting-edge file-sharing platform designed to seamlessly connect you with the people that matter most. <br>With ByteStream, you can effortlessly share files up to <b>1MB</b> in size, making it the perfect solution for sending quick, essential documents, photos, and more.</p>
+                        <button>Signup now</button>
+                    </article>
+                </div>
+            </div>
+        </div>
             
     </div>
 

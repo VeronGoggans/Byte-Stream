@@ -1,0 +1,43 @@
+.home-view {
+    height: calc(100dvh - 60px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity .7s ease, transform .2s ease;
+}
+
+
+
+.home-view article {
+    padding: 20px;
+    border-radius: 20px;
+    /* box-shadow: 15px 15px 25px #000000; */
+}
+
+.home-view article p {
+    color: #949ab4;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.home-view h2 {
+    font-size: 52px;
+    background: linear-gradient(90deg, rgb(141, 173, 255) 0%, rgb(84, 96, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0;
+}
+
+.home-view button {
+    cursor: pointer;
+    margin: 40px auto;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(141, 173, 255) 0%, rgb(84, 96, 255) 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}

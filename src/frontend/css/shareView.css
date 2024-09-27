@@ -38,7 +38,9 @@
 }
 
 .file-upload-wrapper h2 {
-    color: #6C63FF;
+    background: linear-gradient(90deg, rgb(141, 173, 255) 0%, rgb(84, 96, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 56px;
     width: fit-content;
     margin: 20px auto;
@@ -57,7 +59,7 @@
 }
 
 .file-upload-wrapper form i {
-    color: #3f3b55;
+    color: #dde3ff;
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -73,7 +75,7 @@
 }
 
 .share-view section .row {
-    background-color: #dfe2ffc2;
+    background-color: #f7f7fb;
     margin-bottom: 10px;
     list-style: none;
     padding: 15px 20px;
@@ -85,7 +87,7 @@
 
 .file-upload-wrapper section .row i {
     font-size: 30px;
-    color: #6C63FF;
+    color: #909fff;
 }
 
 .file-upload-wrapper section .upload-details span {

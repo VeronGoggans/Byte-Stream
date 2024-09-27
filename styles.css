@@ -6,6 +6,9 @@
     overflow: hidden;
 }
 
+body {
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -20,6 +23,12 @@ input {
 .wrapper {
     display: grid;
     grid-template-rows: 60px 1fr;
+}
+
+.webapp-title-color-part {
+    background: linear-gradient(90deg, rgb(141, 173, 255) 0%, rgb(84, 96, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -40,7 +49,8 @@ input {
 }
 
 .active-tab {
-    background-color: #3f3b55;
+    background: rgb(92,127,221);
+    background: linear-gradient(90deg, rgb(186, 205, 255) 0%, rgb(84, 96, 255) 100%);
     color: #fff;
 }
 

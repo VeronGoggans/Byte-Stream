@@ -4,7 +4,7 @@ const LOGIN_TEMPLATE = `
             <div class="user-info">
                 <h1>Login</h1>
                 <p>Don't have an account yet? <span>Sign up</span></p>
-                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Username">
                 <input type="password" placeholder="Password">
                 <button>Login</button>
             </div>
@@ -21,7 +21,7 @@ const SIGNUP_TEMPLATE = `
             <div class="user-info">
                 <h1>Sign up</h1>
                 <p>Already have an account? <span>Login</span></p>
-                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <input type="password" placeholder="Repeat Password">
                 <button>Sign up</button>
@@ -73,7 +73,15 @@ const SHARE_TEMPLATE = `
 `
 
 const HOME_TEMPLATE = `
-
+    <div class="home-view">
+        <div class="left">
+            <article class="text-wrapper">
+                <h2>Share files with friends</h2>
+                <p>Introducing <b>ByteStream</b>, a cutting-edge file-sharing platform designed to seamlessly connect you with the people that matter most. <br><br>With ByteStream, you can effortlessly share files up to <b>1MB</b> in size, making it the perfect solution for sending quick, essential documents, photos, and more.</p>
+                <button>Signup now</button>
+            </article>
+        </div>
+    </div>
 `
 
 const INBOX_TEMPLATE = `
